@@ -1,0 +1,11 @@
+com\faculynk\service\AnalyticsServiceTest.class
+com\faculynk\service\SimulatorServiceTest.class
+com\faculynk\SecurityAndAuthTests.class
+com\faculynk\WorkloadCalculatorTests.class
+com\faculynk\EntityAndRepositoryTests.class
+com\faculynk\service\AuditServiceTest.class
+com\faculynk\MatchingEngineTests.class
+com\faculynk\RegistrationAndVerificationTests.class
+com\faculynk\WorkloadAndAssignmentTests.class
+com\faculynk\FaculynkApplicationTests.class
+com\faculynk\RecommendationTests.class

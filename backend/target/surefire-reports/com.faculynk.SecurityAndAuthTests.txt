@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.faculynk.SecurityAndAuthTests
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.971 s -- in com.faculynk.SecurityAndAuthTests

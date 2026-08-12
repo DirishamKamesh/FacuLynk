@@ -1,0 +1,46 @@
+# ========================================
+# FacuLynk Backend — Test Configuration
+# ========================================
+# Uses H2 in-memory database with Flyway schema migration & seed data.
+
+server:
+  port: 0
+
+spring:
+  application:
+    name: faculynk-backend-test
+
+  datasource:
+    url: jdbc:h2:mem:faculynk_test;DB_CLOSE_DELAY=-1;MODE=MySQL;CASE_INSENSITIVE_IDENTIFIERS=TRUE
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    open-in-view: false
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+
+app:
+  jwt:
+    secret: test-secret-key-minimum-256-bits-long-for-hmac-sha256-algorithm-test
+    expiration-ms: 3600000
+    cookie-name: FACULYNK_TOKEN
+    cookie-secure: false
+  cors:
+    allowed-origins: http://localhost:3000
+    allowed-methods: GET,POST,PUT,DELETE,OPTIONS
+    allowed-headers: Content-Type,Accept,X-Requested-With
+    allow-credentials: true
+    max-age: 3600
+
+logging:
+  level:
+    com.faculynk: DEBUG
+    org.flywaydb: INFO

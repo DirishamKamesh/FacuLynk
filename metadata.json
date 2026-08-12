@@ -1,0 +1,6 @@
+{
+  "name": "FacuLynk",
+  "description": "Institutional SaaS application for university faculty workload management and task balancing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

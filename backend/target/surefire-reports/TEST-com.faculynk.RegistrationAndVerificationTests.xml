@@ -1,0 +1,1665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.faculynk.RegistrationAndVerificationTests" time="2.841" tests="15" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="26"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="E:\Antigravity Projects\faculynkv3\backend\target\test-classes;E:\Antigravity Projects\faculynkv3\backend\target\classes;C:\Users\kames\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.4.3\spring-boot-starter-web-3.4.3.jar;C:\Users\kames\.m2\repository\org\springframework\boot\spring-boot-starter\3.4.3\spring-boot-starter-3.4.3.jar;C:\Users\kames\.m2\repository\org\springframework\boot\spring-boot\3.4.3\spring-boot-3.4.3.jar;C:\Users\kames\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.4.3\spring-boot-autoconfigure-3.4.3.jar;C:\Users\kames\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.4.3\spring-boot-starter-logging-3.4.3.jar;C:\Users\kames\.m2\repository\ch\qos\logback\logback-classic\1.5.16\logback-classic-1.5.16.jar;C:\Users\kames\.m2\repository\ch\qos\logback\logback-core\1.5.16\logback-core-1.5.16.jar;C:\Users\kames\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.24.3\log4j-to-slf4j-2.24.3.jar;C:\Users\kames\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;C:\Users\kames\.m2\repository\org\slf4j\jul-to-slf4j\2.0.16\jul-to-slf4j-2.0.16.jar;C:\Users\kames\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\kames\.m2\repository\org\yaml\snakeyaml\2.3\snakeyaml-2.3.jar;C:\Users\kames\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.4.3\spring-boot-starter-json-3.4.3.jar;C:\Users\kames\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.18.2\jackson-datatype-jdk8-2.18.2.jar;C:\Users\kames\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.18.2\jackson-module-parameter-names-2.18.2.jar;C:\Users\kames\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.4.3\spring-boot-starter-tomcat-3.4.3.jar;C:\Users\kames\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.36\tomcat-embed-core-10.1.36.jar;C:\Users\kames\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.36\tomcat-embed-websocket-10.1.36.jar;C:\Users\kames\.m2\repository\org\springframework\spring-web\6.2.3\spring-web-6.2.3.jar;C:\Users\kames\.m2\repository\org\springframework\spring-beans\6.2.3\spring-beans-6.2.3.jar;C:\Users\kames\.m2\repository\io\micrometer\micrometer-observation\1.14.4\micrometer-observation-1.14.4.jar;C:\Users\kames\.m2\repository\io\micrometer\micrometer-commons\1.14.4\micrometer-commons-1.14.4.jar;C:\Users\kames\.m2\repository\org\springframework\spring-webmvc\6.2.3\spring-webmvc-6.2.3.jar;C:\Users\kames\.m2\repository\org\springframework\spring-context\6.2.3\spring-context-6.2.3.jar;C:\Users\kames\.m2\repository\org\springframework\spring-expression\6.2.3\spring-expression-6.2.3.jar;C:\Users\kames\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.4.3\spring-boot-starter-data-jpa-3.4.3.jar;C:\Users\kames\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.4.3\spring-boot-starter-jdbc-3.4.3.jar;C:\Users\kames\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;C:\Users\kames\.m2\repository\org\springframework\spring-jdbc\6.2.3\spring-jdbc-6.2.3.jar;C:\Users\kames\.m2\repository\org\hibernate\orm\hibernate-core\6.6.8.Final\hibernate-core-6.6.8.Final.jar;C:\Users\kames\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\kames\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\kames\.m2\repository\org\jboss\logging\jboss-logging\3.6.1.Final\jboss-logging-3.6.1.Final.jar;C:\Users\kames\.m2\repository\org\hibernate\common\hibernate-commons-annotations\7.0.3.Final\hibernate-commons-annotations-7.0.3.Final.jar;C:\Users\kames\.m2\repository\io\smallrye\jandex\3.2.0\jandex-3.2.0.jar;C:\Users\kames\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\kames\.m2\repository\net\bytebuddy\byte-buddy\1.15.11\byte-buddy-1.15.11.jar;C:\Users\kames\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\kames\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\kames\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\kames\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\kames\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\kames\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\kames\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\kames\.m2\repository\org\springframework\data\spring-data-jpa\3.4.3\spring-data-jpa-3.4.3.jar;C:\Users\kames\.m2\repository\org\springframework\data\spring-data-commons\3.4.3\spring-data-commons-3.4.3.jar;C:\Users\kames\.m2\repository\org\springframework\spring-orm\6.2.3\spring-orm-6.2.3.jar;C:\Users\kames\.m2\repository\org\springframework\spring-tx\6.2.3\spring-tx-6.2.3.jar;C:\Users\kames\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\kames\.m2\repository\org\springframework\spring-aspects\6.2.3\spring-aspects-6.2.3.jar;C:\Users\kames\.m2\repository\org\aspectj\aspectjweaver\1.9.22.1\aspectjweaver-1.9.22.1.jar;C:\Users\kames\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.4.3\spring-boot-starter-security-3.4.3.jar;C:\Users\kames\.m2\repository\org\springframework\spring-aop\6.2.3\spring-aop-6.2.3.jar;C:\Users\kames\.m2\repository\org\springframework\security\spring-security-config\6.4.3\spring-security-config-6.4.3.jar;C:\Users\kames\.m2\repository\org\springframework\security\spring-security-web\6.4.3\spring-security-web-6.4.3.jar;C:\Users\kames\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.4.3\spring-boot-starter-validation-3.4.3.jar;C:\Users\kames\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.36\tomcat-embed-el-10.1.36.jar;C:\Users\kames\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.2.Final\hibernate-validator-8.0.2.Final.jar;C:\Users\kames\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\kames\.m2\repository\com\mysql\mysql-connector-j\9.1.0\mysql-connector-j-9.1.0.jar;C:\Users\kames\.m2\repository\org\flywaydb\flyway-core\10.20.1\flyway-core-10.20.1.jar;C:\Users\kames\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-toml\2.18.2\jackson-dataformat-toml-2.18.2.jar;C:\Users\kames\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.2\jackson-core-2.18.2.jar;C:\Users\kames\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.18.2\jackson-datatype-jsr310-2.18.2.jar;C:\Users\kames\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.2\jackson-annotations-2.18.2.jar;C:\Users\kames\.m2\repository\org\flywaydb\flyway-mysql\10.20.1\flyway-mysql-10.20.1.jar;C:\Users\kames\.m2\repository\io\jsonwebtoken\jjwt-api\0.12.6\jjwt-api-0.12.6.jar;C:\Users\kames\.m2\repository\io\jsonwebtoken\jjwt-impl\0.12.6\jjwt-impl-0.12.6.jar;C:\Users\kames\.m2\repository\io\jsonwebtoken\jjwt-jackson\0.12.6\jjwt-jackson-0.12.6.jar;C:\Users\kames\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.2\jackson-databind-2.18.2.jar;C:\Users\kames\.m2\repository\org\projectlombok\lombok\1.18.36\lombok-1.18.36.jar;C:\Users\kames\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.4.3\spring-boot-starter-test-3.4.3.jar;C:\Users\kames\.m2\repository\org\springframework\boot\spring-boot-test\3.4.3\spring-boot-test-3.4.3.jar;C:\Users\kames\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.4.3\spring-boot-test-autoconfigure-3.4.3.jar;C:\Users\kames\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\kames\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\kames\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\kames\.m2\repository\net\minidev\json-smart\2.5.2\json-smart-2.5.2.jar;C:\Users\kames\.m2\repository\net\minidev\accessors-smart\2.5.2\accessors-smart-2.5.2.jar;C:\Users\kames\.m2\repository\org\ow2\asm\asm\9.7.1\asm-9.7.1.jar;C:\Users\kames\.m2\repository\org\assertj\assertj-core\3.26.3\assertj-core-3.26.3.jar;C:\Users\kames\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\kames\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\kames\.m2\repository\org\junit\jupiter\junit-jupiter\5.11.4\junit-jupiter-5.11.4.jar;C:\Users\kames\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.4\junit-jupiter-api-5.11.4.jar;C:\Users\kames\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\kames\.m2\repository\org\junit\platform\junit-platform-commons\1.11.4\junit-platform-commons-1.11.4.jar;C:\Users\kames\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\kames\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.4\junit-jupiter-params-5.11.4.jar;C:\Users\kames\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.11.4\junit-jupiter-engine-5.11.4.jar;C:\Users\kames\.m2\repository\org\junit\platform\junit-platform-engine\1.11.4\junit-platform-engine-1.11.4.jar;C:\Users\kames\.m2\repository\org\mockito\mockito-core\5.14.2\mockito-core-5.14.2.jar;C:\Users\kames\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.11\byte-buddy-agent-1.15.11.jar;C:\Users\kames\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\kames\.m2\repository\org\mockito\mockito-junit-jupiter\5.14.2\mockito-junit-jupiter-5.14.2.jar;C:\Users\kames\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\kames\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\kames\.m2\repository\org\springframework\spring-core\6.2.3\spring-core-6.2.3.jar;C:\Users\kames\.m2\repository\org\springframework\spring-jcl\6.2.3\spring-jcl-6.2.3.jar;C:\Users\kames\.m2\repository\org\springframework\spring-test\6.2.3\spring-test-6.2.3.jar;C:\Users\kames\.m2\repository\org\xmlunit\xmlunit-core\2.10.0\xmlunit-core-2.10.0.jar;C:\Users\kames\.m2\repository\org\springframework\security\spring-security-test\6.4.3\spring-security-test-6.4.3.jar;C:\Users\kames\.m2\repository\org\springframework\security\spring-security-core\6.4.3\spring-security-core-6.4.3.jar;C:\Users\kames\.m2\repository\org\springframework\security\spring-security-crypto\6.4.3\spring-security-crypto-6.4.3.jar;C:\Users\kames\.m2\repository\com\h2database\h2\2.3.232\h2-2.3.232.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="26"/>
+    <property name="APPLICATION_NAME" value="faculynk-backend-test"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-26.0.2\bin"/>
+    <property name="sun.java.command" value="C:\Users\kames\AppData\Local\Temp\surefire7823175768925013684\surefirebooter-20260813011728920_3.jar C:\Users\kames\AppData\Local\Temp\surefire7823175768925013684 2026-08-13T01-17-28_633-jvmRun1 surefire-20260813011728920_1tmp surefire_0-20260813011728920_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="E:\Antigravity Projects\faculynkv3\backend\target\test-classes;E:\Antigravity Projects\faculynkv3\backend\target\classes;C:\Users\kames\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.4.3\spring-boot-starter-web-3.4.3.jar;C:\Users\kames\.m2\repository\org\springframework\boot\spring-boot-starter\3.4.3\spring-boot-starter-3.4.3.jar;C:\Users\kames\.m2\repository\org\springframework\boot\spring-boot\3.4.3\spring-boot-3.4.3.jar;C:\Users\kames\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.4.3\spring-boot-autoconfigure-3.4.3.jar;C:\Users\kames\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.4.3\spring-boot-starter-logging-3.4.3.jar;C:\Users\kames\.m2\repository\ch\qos\logback\logback-classic\1.5.16\logback-classic-1.5.16.jar;C:\Users\kames\.m2\repository\ch\qos\logback\logback-core\1.5.16\logback-core-1.5.16.jar;C:\Users\kames\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.24.3\log4j-to-slf4j-2.24.3.jar;C:\Users\kames\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;C:\Users\kames\.m2\repository\org\slf4j\jul-to-slf4j\2.0.16\jul-to-slf4j-2.0.16.jar;C:\Users\kames\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\kames\.m2\repository\org\yaml\snakeyaml\2.3\snakeyaml-2.3.jar;C:\Users\kames\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.4.3\spring-boot-starter-json-3.4.3.jar;C:\Users\kames\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.18.2\jackson-datatype-jdk8-2.18.2.jar;C:\Users\kames\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.18.2\jackson-module-parameter-names-2.18.2.jar;C:\Users\kames\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.4.3\spring-boot-starter-tomcat-3.4.3.jar;C:\Users\kames\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.36\tomcat-embed-core-10.1.36.jar;C:\Users\kames\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.36\tomcat-embed-websocket-10.1.36.jar;C:\Users\kames\.m2\repository\org\springframework\spring-web\6.2.3\spring-web-6.2.3.jar;C:\Users\kames\.m2\repository\org\springframework\spring-beans\6.2.3\spring-beans-6.2.3.jar;C:\Users\kames\.m2\repository\io\micrometer\micrometer-observation\1.14.4\micrometer-observation-1.14.4.jar;C:\Users\kames\.m2\repository\io\micrometer\micrometer-commons\1.14.4\micrometer-commons-1.14.4.jar;C:\Users\kames\.m2\repository\org\springframework\spring-webmvc\6.2.3\spring-webmvc-6.2.3.jar;C:\Users\kames\.m2\repository\org\springframework\spring-context\6.2.3\spring-context-6.2.3.jar;C:\Users\kames\.m2\repository\org\springframework\spring-expression\6.2.3\spring-expression-6.2.3.jar;C:\Users\kames\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.4.3\spring-boot-starter-data-jpa-3.4.3.jar;C:\Users\kames\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.4.3\spring-boot-starter-jdbc-3.4.3.jar;C:\Users\kames\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;C:\Users\kames\.m2\repository\org\springframework\spring-jdbc\6.2.3\spring-jdbc-6.2.3.jar;C:\Users\kames\.m2\repository\org\hibernate\orm\hibernate-core\6.6.8.Final\hibernate-core-6.6.8.Final.jar;C:\Users\kames\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\kames\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\kames\.m2\repository\org\jboss\logging\jboss-logging\3.6.1.Final\jboss-logging-3.6.1.Final.jar;C:\Users\kames\.m2\repository\org\hibernate\common\hibernate-commons-annotations\7.0.3.Final\hibernate-commons-annotations-7.0.3.Final.jar;C:\Users\kames\.m2\repository\io\smallrye\jandex\3.2.0\jandex-3.2.0.jar;C:\Users\kames\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\kames\.m2\repository\net\bytebuddy\byte-buddy\1.15.11\byte-buddy-1.15.11.jar;C:\Users\kames\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\kames\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\kames\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\kames\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\kames\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\kames\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\kames\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\kames\.m2\repository\org\springframework\data\spring-data-jpa\3.4.3\spring-data-jpa-3.4.3.jar;C:\Users\kames\.m2\repository\org\springframework\data\spring-data-commons\3.4.3\spring-data-commons-3.4.3.jar;C:\Users\kames\.m2\repository\org\springframework\spring-orm\6.2.3\spring-orm-6.2.3.jar;C:\Users\kames\.m2\repository\org\springframework\spring-tx\6.2.3\spring-tx-6.2.3.jar;C:\Users\kames\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\kames\.m2\repository\org\springframework\spring-aspects\6.2.3\spring-aspects-6.2.3.jar;C:\Users\kames\.m2\repository\org\aspectj\aspectjweaver\1.9.22.1\aspectjweaver-1.9.22.1.jar;C:\Users\kames\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.4.3\spring-boot-starter-security-3.4.3.jar;C:\Users\kames\.m2\repository\org\springframework\spring-aop\6.2.3\spring-aop-6.2.3.jar;C:\Users\kames\.m2\repository\org\springframework\security\spring-security-config\6.4.3\spring-security-config-6.4.3.jar;C:\Users\kames\.m2\repository\org\springframework\security\spring-security-web\6.4.3\spring-security-web-6.4.3.jar;C:\Users\kames\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.4.3\spring-boot-starter-validation-3.4.3.jar;C:\Users\kames\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.36\tomcat-embed-el-10.1.36.jar;C:\Users\kames\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.2.Final\hibernate-validator-8.0.2.Final.jar;C:\Users\kames\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\kames\.m2\repository\com\mysql\mysql-connector-j\9.1.0\mysql-connector-j-9.1.0.jar;C:\Users\kames\.m2\repository\org\flywaydb\flyway-core\10.20.1\flyway-core-10.20.1.jar;C:\Users\kames\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-toml\2.18.2\jackson-dataformat-toml-2.18.2.jar;C:\Users\kames\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.2\jackson-core-2.18.2.jar;C:\Users\kames\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.18.2\jackson-datatype-jsr310-2.18.2.jar;C:\Users\kames\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.2\jackson-annotations-2.18.2.jar;C:\Users\kames\.m2\repository\org\flywaydb\flyway-mysql\10.20.1\flyway-mysql-10.20.1.jar;C:\Users\kames\.m2\repository\io\jsonwebtoken\jjwt-api\0.12.6\jjwt-api-0.12.6.jar;C:\Users\kames\.m2\repository\io\jsonwebtoken\jjwt-impl\0.12.6\jjwt-impl-0.12.6.jar;C:\Users\kames\.m2\repository\io\jsonwebtoken\jjwt-jackson\0.12.6\jjwt-jackson-0.12.6.jar;C:\Users\kames\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.2\jackson-databind-2.18.2.jar;C:\Users\kames\.m2\repository\org\projectlombok\lombok\1.18.36\lombok-1.18.36.jar;C:\Users\kames\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.4.3\spring-boot-starter-test-3.4.3.jar;C:\Users\kames\.m2\repository\org\springframework\boot\spring-boot-test\3.4.3\spring-boot-test-3.4.3.jar;C:\Users\kames\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.4.3\spring-boot-test-autoconfigure-3.4.3.jar;C:\Users\kames\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\kames\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\kames\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\kames\.m2\repository\net\minidev\json-smart\2.5.2\json-smart-2.5.2.jar;C:\Users\kames\.m2\repository\net\minidev\accessors-smart\2.5.2\accessors-smart-2.5.2.jar;C:\Users\kames\.m2\repository\org\ow2\asm\asm\9.7.1\asm-9.7.1.jar;C:\Users\kames\.m2\repository\org\assertj\assertj-core\3.26.3\assertj-core-3.26.3.jar;C:\Users\kames\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\kames\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\kames\.m2\repository\org\junit\jupiter\junit-jupiter\5.11.4\junit-jupiter-5.11.4.jar;C:\Users\kames\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.4\junit-jupiter-api-5.11.4.jar;C:\Users\kames\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\kames\.m2\repository\org\junit\platform\junit-platform-commons\1.11.4\junit-platform-commons-1.11.4.jar;C:\Users\kames\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\kames\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.4\junit-jupiter-params-5.11.4.jar;C:\Users\kames\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.11.4\junit-jupiter-engine-5.11.4.jar;C:\Users\kames\.m2\repository\org\junit\platform\junit-platform-engine\1.11.4\junit-platform-engine-1.11.4.jar;C:\Users\kames\.m2\repository\org\mockito\mockito-core\5.14.2\mockito-core-5.14.2.jar;C:\Users\kames\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.11\byte-buddy-agent-1.15.11.jar;C:\Users\kames\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\kames\.m2\repository\org\mockito\mockito-junit-jupiter\5.14.2\mockito-junit-jupiter-5.14.2.jar;C:\Users\kames\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\kames\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\kames\.m2\repository\org\springframework\spring-core\6.2.3\spring-core-6.2.3.jar;C:\Users\kames\.m2\repository\org\springframework\spring-jcl\6.2.3\spring-jcl-6.2.3.jar;C:\Users\kames\.m2\repository\org\springframework\spring-test\6.2.3\spring-test-6.2.3.jar;C:\Users\kames\.m2\repository\org\xmlunit\xmlunit-core\2.10.0\xmlunit-core-2.10.0.jar;C:\Users\kames\.m2\repository\org\springframework\security\spring-security-test\6.4.3\spring-security-test-6.4.3.jar;C:\Users\kames\.m2\repository\org\springframework\security\spring-security-core\6.4.3\spring-security-core-6.4.3.jar;C:\Users\kames\.m2\repository\org\springframework\security\spring-security-crypto\6.4.3\spring-security-crypto-6.4.3.jar;C:\Users\kames\.m2\repository\com\h2database\h2\2.3.232\h2-2.3.232.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\kames"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-07-21"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-26.0.2"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="E:\Antigravity Projects\faculynkv3\backend"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\kames\AppData\Local\Temp\surefire7823175768925013684\surefirebooter-20260813011728920_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="polyglot.engine.WarnInterpreterOnly" value="false"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="26.0.2+10-55"/>
+    <property name="user.name" value="kames"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\kames\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\kames\AppData\Local\Temp\"/>
+    <property name="com.zaxxer.hikari.pool_number" value="2"/>
+    <property name="java.version" value="26.0.2"/>
+    <property name="user.dir" value="E:\Antigravity Projects\faculynkv3\backend"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="9220"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-26.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/kames/.gemini/antigravity-ide/bin;C:\Python314\Scripts\;C:\Python314\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\Git\cmd;D:\msys\1.0\bin;E:\cursor\resources\app\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Users\kames\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\kames\AppData\Local\Programs\Python\Python313\;e:\cursor\resources\app\codeBin;C:\Users\kames\AppData\Local\Microsoft\WindowsApps;D:\VS Code\Microsoft VS Code\bin;C:\Users\kames\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\kames\AppData\Roaming\npm;C:\Users\kames\AppData\Local\Programs\Antigravity\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Users\kames\AppData\Local\Programs\Antigravity IDE\bin;C:\Users\kames\AppData\Local\GitHubDesktop\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="26.0.2+10-55"/>
+    <property name="stdin.encoding" value="Cp1252"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="70.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[faculynk-backend-test] "/>
+  </properties>
+  <testcase name="testFacultyCannotListPending" classname="com.faculynk.RegistrationAndVerificationTests" time="0.032">
+    <system-out><![CDATA[2026-08-13T01:18:04.214+05:30  INFO 9220 --- [faculynk-backend-test] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.faculynk.RegistrationAndVerificationTests]: RegistrationAndVerificationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-13T01:18:04.223+05:30  INFO 9220 --- [faculynk-backend-test] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.faculynk.FaculynkApplication for test class com.faculynk.RegistrationAndVerificationTests
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.account_status,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.institutional_id,
+        u1_0.password_hash,
+        u1_0.role_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        fp1_0.id,
+        fp1_0.avatar_url,
+        fp1_0.created_at,
+        fp1_0.department_id,
+        fp1_0.designation,
+        fp1_0.experience_years,
+        fp1_0.max_workload_hours,
+        fp1_0.office,
+        fp1_0.phone,
+        fp1_0.research_area,
+        fp1_0.updated_at,
+        fp1_0.user_id 
+    from
+        faculty_profiles fp1_0 
+    where
+        fp1_0.user_id=?
+]]></system-out>
+  </testcase>
+  <testcase name="testHodCanRejectRequest" classname="com.faculynk.RegistrationAndVerificationTests" time="0.142">
+    <system-out><![CDATA[Hibernate: 
+    select
+        frr1_0.id,
+        frr1_0.availability,
+        frr1_0.department_name,
+        frr1_0.designation,
+        frr1_0.email,
+        frr1_0.full_name,
+        frr1_0.hod_note,
+        frr1_0.institutional_id,
+        frr1_0.phone,
+        frr1_0.reviewed_at,
+        frr1_0.skills_json,
+        frr1_0.status,
+        frr1_0.submitted_at 
+    from
+        faculty_registration_requests frr1_0 
+    where
+        frr1_0.institutional_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.account_status,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.institutional_id,
+        u1_0.password_hash,
+        u1_0.role_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        fp1_0.id,
+        fp1_0.avatar_url,
+        fp1_0.created_at,
+        fp1_0.department_id,
+        fp1_0.designation,
+        fp1_0.experience_years,
+        fp1_0.max_workload_hours,
+        fp1_0.office,
+        fp1_0.phone,
+        fp1_0.research_area,
+        fp1_0.updated_at,
+        fp1_0.user_id 
+    from
+        faculty_profiles fp1_0 
+    where
+        fp1_0.user_id=?
+Hibernate: 
+    select
+        frr1_0.id,
+        frr1_0.availability,
+        frr1_0.department_name,
+        frr1_0.designation,
+        frr1_0.email,
+        frr1_0.full_name,
+        frr1_0.hod_note,
+        frr1_0.institutional_id,
+        frr1_0.phone,
+        frr1_0.reviewed_at,
+        frr1_0.skills_json,
+        frr1_0.status,
+        frr1_0.submitted_at 
+    from
+        faculty_registration_requests frr1_0 
+    where
+        frr1_0.id=? for update
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.account_status,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.institutional_id,
+        u1_0.password_hash,
+        u1_0.role_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.institutional_id=?
+]]></system-out>
+  </testcase>
+  <testcase name="testValidRegistration" classname="com.faculynk.RegistrationAndVerificationTests" time="0.111">
+    <system-out><![CDATA[Hibernate: 
+    select
+        d1_0.id,
+        d1_0.code,
+        d1_0.created_at,
+        d1_0.name 
+    from
+        departments d1_0 
+    where
+        d1_0.code=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.account_status,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.institutional_id,
+        u1_0.password_hash,
+        u1_0.role_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.institutional_id=?
+Hibernate: 
+    select
+        frr1_0.id 
+    from
+        faculty_registration_requests frr1_0 
+    where
+        frr1_0.institutional_id=? 
+        and frr1_0.status in (?) 
+    limit
+        ?
+Hibernate: 
+    select
+        frr1_0.id 
+    from
+        faculty_registration_requests frr1_0 
+    where
+        frr1_0.email=? 
+        and frr1_0.status in (?) 
+    limit
+        ?
+Hibernate: 
+    insert 
+    into
+        faculty_registration_requests
+        (availability, department_name, designation, email, full_name, hod_note, institutional_id, phone, reviewed_at, skills_json, status, submitted_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        frr1_0.id,
+        frr1_0.availability,
+        frr1_0.department_name,
+        frr1_0.designation,
+        frr1_0.email,
+        frr1_0.full_name,
+        frr1_0.hod_note,
+        frr1_0.institutional_id,
+        frr1_0.phone,
+        frr1_0.reviewed_at,
+        frr1_0.skills_json,
+        frr1_0.status,
+        frr1_0.submitted_at 
+    from
+        faculty_registration_requests frr1_0 
+    where
+        frr1_0.institutional_id=?
+]]></system-out>
+  </testcase>
+  <testcase name="testInvalidDepartmentRejected" classname="com.faculynk.RegistrationAndVerificationTests" time="0.033">
+    <system-out><![CDATA[Hibernate: 
+    select
+        d1_0.id,
+        d1_0.code,
+        d1_0.created_at,
+        d1_0.name 
+    from
+        departments d1_0 
+    where
+        d1_0.code=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.code,
+        d1_0.created_at,
+        d1_0.name 
+    from
+        departments d1_0 
+    where
+        d1_0.name=?
+]]></system-out>
+  </testcase>
+  <testcase name="testPendingRegistrationCannotLogin" classname="com.faculynk.RegistrationAndVerificationTests" time="0.037">
+    <system-out><![CDATA[Hibernate: 
+    select
+        u1_0.id,
+        u1_0.account_status,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.institutional_id,
+        u1_0.password_hash,
+        u1_0.role_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.institutional_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.account_status,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.institutional_id,
+        u1_0.password_hash,
+        u1_0.role_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+]]></system-out>
+  </testcase>
+  <testcase name="testApprovedFacultyCanLogin" classname="com.faculynk.RegistrationAndVerificationTests" time="1.0">
+    <system-out><![CDATA[Hibernate: 
+    select
+        frr1_0.id,
+        frr1_0.availability,
+        frr1_0.department_name,
+        frr1_0.designation,
+        frr1_0.email,
+        frr1_0.full_name,
+        frr1_0.hod_note,
+        frr1_0.institutional_id,
+        frr1_0.phone,
+        frr1_0.reviewed_at,
+        frr1_0.skills_json,
+        frr1_0.status,
+        frr1_0.submitted_at 
+    from
+        faculty_registration_requests frr1_0 
+    where
+        frr1_0.institutional_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.account_status,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.institutional_id,
+        u1_0.password_hash,
+        u1_0.role_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        fp1_0.id,
+        fp1_0.avatar_url,
+        fp1_0.created_at,
+        fp1_0.department_id,
+        fp1_0.designation,
+        fp1_0.experience_years,
+        fp1_0.max_workload_hours,
+        fp1_0.office,
+        fp1_0.phone,
+        fp1_0.research_area,
+        fp1_0.updated_at,
+        fp1_0.user_id 
+    from
+        faculty_profiles fp1_0 
+    where
+        fp1_0.user_id=?
+Hibernate: 
+    select
+        frr1_0.id,
+        frr1_0.availability,
+        frr1_0.department_name,
+        frr1_0.designation,
+        frr1_0.email,
+        frr1_0.full_name,
+        frr1_0.hod_note,
+        frr1_0.institutional_id,
+        frr1_0.phone,
+        frr1_0.reviewed_at,
+        frr1_0.skills_json,
+        frr1_0.status,
+        frr1_0.submitted_at 
+    from
+        faculty_registration_requests frr1_0 
+    where
+        frr1_0.id=? for update
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.account_status,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.institutional_id,
+        u1_0.password_hash,
+        u1_0.role_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.institutional_id=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.code,
+        d1_0.created_at,
+        d1_0.name 
+    from
+        departments d1_0 
+    where
+        d1_0.code=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.code,
+        d1_0.created_at,
+        d1_0.name 
+    from
+        departments d1_0 
+    where
+        d1_0.name=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description 
+    from
+        roles r1_0 
+    where
+        r1_0.id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        s1_0.name=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        s1_0.name=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        s1_0.name=?
+Hibernate: 
+    insert 
+    into
+        users
+        (account_status, created_at, email, full_name, institutional_id, password_hash, role_id, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        faculty_profiles
+        (avatar_url, created_at, department_id, designation, experience_years, max_workload_hours, office, phone, research_area, updated_at, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        audit_logs
+        (action, created_at, details, entity_id, entity_type, performed_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    update
+        faculty_registration_requests 
+    set
+        availability=?,
+        department_name=?,
+        designation=?,
+        email=?,
+        full_name=?,
+        hod_note=?,
+        institutional_id=?,
+        phone=?,
+        reviewed_at=?,
+        skills_json=?,
+        status=? 
+    where
+        id=?
+Hibernate: 
+    insert 
+    into
+        faculty_skills
+        (faculty_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        faculty_skills
+        (faculty_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        faculty_skills
+        (faculty_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.account_status,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.institutional_id,
+        u1_0.password_hash,
+        u1_0.role_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.institutional_id=?
+Hibernate: 
+    select
+        fp1_0.id,
+        fp1_0.avatar_url,
+        fp1_0.created_at,
+        fp1_0.department_id,
+        fp1_0.designation,
+        fp1_0.experience_years,
+        fp1_0.max_workload_hours,
+        fp1_0.office,
+        fp1_0.phone,
+        fp1_0.research_area,
+        fp1_0.updated_at,
+        fp1_0.user_id 
+    from
+        faculty_profiles fp1_0 
+    join
+        users u1_0 
+            on u1_0.id=fp1_0.user_id 
+    where
+        u1_0.id=?
+]]></system-out>
+  </testcase>
+  <testcase name="testApprovalIsAtomicOnFailure" classname="com.faculynk.RegistrationAndVerificationTests" time="0.024">
+    <system-out><![CDATA[Hibernate: 
+    select
+        u1_0.id,
+        u1_0.account_status,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.institutional_id,
+        u1_0.password_hash,
+        u1_0.role_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        fp1_0.id,
+        fp1_0.avatar_url,
+        fp1_0.created_at,
+        fp1_0.department_id,
+        fp1_0.designation,
+        fp1_0.experience_years,
+        fp1_0.max_workload_hours,
+        fp1_0.office,
+        fp1_0.phone,
+        fp1_0.research_area,
+        fp1_0.updated_at,
+        fp1_0.user_id 
+    from
+        faculty_profiles fp1_0 
+    where
+        fp1_0.user_id=?
+Hibernate: 
+    insert 
+    into
+        faculty_registration_requests
+        (availability, department_name, designation, email, full_name, hod_note, institutional_id, phone, reviewed_at, skills_json, status, submitted_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        frr1_0.id,
+        frr1_0.availability,
+        frr1_0.department_name,
+        frr1_0.designation,
+        frr1_0.email,
+        frr1_0.full_name,
+        frr1_0.hod_note,
+        frr1_0.institutional_id,
+        frr1_0.phone,
+        frr1_0.reviewed_at,
+        frr1_0.skills_json,
+        frr1_0.status,
+        frr1_0.submitted_at 
+    from
+        faculty_registration_requests frr1_0 
+    where
+        frr1_0.id=? for update
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.account_status,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.institutional_id,
+        u1_0.password_hash,
+        u1_0.role_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.institutional_id=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.code,
+        d1_0.created_at,
+        d1_0.name 
+    from
+        departments d1_0 
+    where
+        d1_0.code=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.code,
+        d1_0.created_at,
+        d1_0.name 
+    from
+        departments d1_0 
+    where
+        d1_0.name=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.account_status,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.institutional_id,
+        u1_0.password_hash,
+        u1_0.role_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.institutional_id=?
+]]></system-out>
+  </testcase>
+  <testcase name="testDuplicateOpenRegistrationRejected" classname="com.faculynk.RegistrationAndVerificationTests" time="0.023">
+    <system-out><![CDATA[Hibernate: 
+    select
+        d1_0.id,
+        d1_0.code,
+        d1_0.created_at,
+        d1_0.name 
+    from
+        departments d1_0 
+    where
+        d1_0.code=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.account_status,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.institutional_id,
+        u1_0.password_hash,
+        u1_0.role_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.institutional_id=?
+Hibernate: 
+    select
+        frr1_0.id 
+    from
+        faculty_registration_requests frr1_0 
+    where
+        frr1_0.institutional_id=? 
+        and frr1_0.status in (?) 
+    limit
+        ?
+]]></system-out>
+  </testcase>
+  <testcase name="testHodApprovePending" classname="com.faculynk.RegistrationAndVerificationTests" time="0.402">
+    <system-out><![CDATA[Hibernate: 
+    select
+        frr1_0.id,
+        frr1_0.availability,
+        frr1_0.department_name,
+        frr1_0.designation,
+        frr1_0.email,
+        frr1_0.full_name,
+        frr1_0.hod_note,
+        frr1_0.institutional_id,
+        frr1_0.phone,
+        frr1_0.reviewed_at,
+        frr1_0.skills_json,
+        frr1_0.status,
+        frr1_0.submitted_at 
+    from
+        faculty_registration_requests frr1_0 
+    where
+        frr1_0.institutional_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.account_status,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.institutional_id,
+        u1_0.password_hash,
+        u1_0.role_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        fp1_0.id,
+        fp1_0.avatar_url,
+        fp1_0.created_at,
+        fp1_0.department_id,
+        fp1_0.designation,
+        fp1_0.experience_years,
+        fp1_0.max_workload_hours,
+        fp1_0.office,
+        fp1_0.phone,
+        fp1_0.research_area,
+        fp1_0.updated_at,
+        fp1_0.user_id 
+    from
+        faculty_profiles fp1_0 
+    where
+        fp1_0.user_id=?
+Hibernate: 
+    select
+        frr1_0.id,
+        frr1_0.availability,
+        frr1_0.department_name,
+        frr1_0.designation,
+        frr1_0.email,
+        frr1_0.full_name,
+        frr1_0.hod_note,
+        frr1_0.institutional_id,
+        frr1_0.phone,
+        frr1_0.reviewed_at,
+        frr1_0.skills_json,
+        frr1_0.status,
+        frr1_0.submitted_at 
+    from
+        faculty_registration_requests frr1_0 
+    where
+        frr1_0.id=? for update
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.account_status,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.institutional_id,
+        u1_0.password_hash,
+        u1_0.role_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.institutional_id=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.code,
+        d1_0.created_at,
+        d1_0.name 
+    from
+        departments d1_0 
+    where
+        d1_0.code=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.code,
+        d1_0.created_at,
+        d1_0.name 
+    from
+        departments d1_0 
+    where
+        d1_0.name=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description 
+    from
+        roles r1_0 
+    where
+        r1_0.id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        s1_0.name=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        s1_0.name=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        s1_0.name=?
+]]></system-out>
+  </testcase>
+  <testcase name="testRejectedRequestCannotBeApproved" classname="com.faculynk.RegistrationAndVerificationTests" time="0.021">
+    <system-out><![CDATA[Hibernate: 
+    select
+        frr1_0.id,
+        frr1_0.availability,
+        frr1_0.department_name,
+        frr1_0.designation,
+        frr1_0.email,
+        frr1_0.full_name,
+        frr1_0.hod_note,
+        frr1_0.institutional_id,
+        frr1_0.phone,
+        frr1_0.reviewed_at,
+        frr1_0.skills_json,
+        frr1_0.status,
+        frr1_0.submitted_at 
+    from
+        faculty_registration_requests frr1_0 
+    where
+        frr1_0.institutional_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.account_status,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.institutional_id,
+        u1_0.password_hash,
+        u1_0.role_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        fp1_0.id,
+        fp1_0.avatar_url,
+        fp1_0.created_at,
+        fp1_0.department_id,
+        fp1_0.designation,
+        fp1_0.experience_years,
+        fp1_0.max_workload_hours,
+        fp1_0.office,
+        fp1_0.phone,
+        fp1_0.research_area,
+        fp1_0.updated_at,
+        fp1_0.user_id 
+    from
+        faculty_profiles fp1_0 
+    where
+        fp1_0.user_id=?
+Hibernate: 
+    select
+        frr1_0.id,
+        frr1_0.availability,
+        frr1_0.department_name,
+        frr1_0.designation,
+        frr1_0.email,
+        frr1_0.full_name,
+        frr1_0.hod_note,
+        frr1_0.institutional_id,
+        frr1_0.phone,
+        frr1_0.reviewed_at,
+        frr1_0.skills_json,
+        frr1_0.status,
+        frr1_0.submitted_at 
+    from
+        faculty_registration_requests frr1_0 
+    where
+        frr1_0.id=? for update
+Hibernate: 
+    insert 
+    into
+        audit_logs
+        (action, created_at, details, entity_id, entity_type, performed_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    update
+        faculty_registration_requests 
+    set
+        availability=?,
+        department_name=?,
+        designation=?,
+        email=?,
+        full_name=?,
+        hod_note=?,
+        institutional_id=?,
+        phone=?,
+        reviewed_at=?,
+        skills_json=?,
+        status=? 
+    where
+        id=?
+Hibernate: 
+    select
+        frr1_0.id,
+        frr1_0.availability,
+        frr1_0.department_name,
+        frr1_0.designation,
+        frr1_0.email,
+        frr1_0.full_name,
+        frr1_0.hod_note,
+        frr1_0.institutional_id,
+        frr1_0.phone,
+        frr1_0.reviewed_at,
+        frr1_0.skills_json,
+        frr1_0.status,
+        frr1_0.submitted_at 
+    from
+        faculty_registration_requests frr1_0 
+    where
+        frr1_0.id=? for update
+]]></system-out>
+  </testcase>
+  <testcase name="testExistingActiveIdRejected" classname="com.faculynk.RegistrationAndVerificationTests" time="0.02">
+    <system-out><![CDATA[Hibernate: 
+    select
+        d1_0.id,
+        d1_0.code,
+        d1_0.created_at,
+        d1_0.name 
+    from
+        departments d1_0 
+    where
+        d1_0.code=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.account_status,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.institutional_id,
+        u1_0.password_hash,
+        u1_0.role_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.institutional_id=?
+Hibernate: 
+    select
+        fp1_0.id,
+        fp1_0.avatar_url,
+        fp1_0.created_at,
+        fp1_0.department_id,
+        fp1_0.designation,
+        fp1_0.experience_years,
+        fp1_0.max_workload_hours,
+        fp1_0.office,
+        fp1_0.phone,
+        fp1_0.research_area,
+        fp1_0.updated_at,
+        fp1_0.user_id 
+    from
+        faculty_profiles fp1_0 
+    where
+        fp1_0.user_id=?
+]]></system-out>
+  </testcase>
+  <testcase name="testHodCanListPending" classname="com.faculynk.RegistrationAndVerificationTests" time="0.021">
+    <system-out><![CDATA[Hibernate: 
+    select
+        u1_0.id,
+        u1_0.account_status,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.institutional_id,
+        u1_0.password_hash,
+        u1_0.role_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        fp1_0.id,
+        fp1_0.avatar_url,
+        fp1_0.created_at,
+        fp1_0.department_id,
+        fp1_0.designation,
+        fp1_0.experience_years,
+        fp1_0.max_workload_hours,
+        fp1_0.office,
+        fp1_0.phone,
+        fp1_0.research_area,
+        fp1_0.updated_at,
+        fp1_0.user_id 
+    from
+        faculty_profiles fp1_0 
+    where
+        fp1_0.user_id=?
+Hibernate: 
+    select
+        frr1_0.id,
+        frr1_0.availability,
+        frr1_0.department_name,
+        frr1_0.designation,
+        frr1_0.email,
+        frr1_0.full_name,
+        frr1_0.hod_note,
+        frr1_0.institutional_id,
+        frr1_0.phone,
+        frr1_0.reviewed_at,
+        frr1_0.skills_json,
+        frr1_0.status,
+        frr1_0.submitted_at 
+    from
+        faculty_registration_requests frr1_0 
+    where
+        frr1_0.status=?
+]]></system-out>
+  </testcase>
+  <testcase name="testInvalidDesignationRejected" classname="com.faculynk.RegistrationAndVerificationTests" time="0.014"/>
+  <testcase name="testDuplicateConcurrentApprovals" classname="com.faculynk.RegistrationAndVerificationTests" time="0.422">
+    <system-out><![CDATA[Hibernate: 
+    insert 
+    into
+        faculty_registration_requests
+        (availability, department_name, designation, email, full_name, hod_note, institutional_id, phone, reviewed_at, skills_json, status, submitted_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.account_status,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.institutional_id,
+        u1_0.password_hash,
+        u1_0.role_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        fp1_0.id,
+        fp1_0.avatar_url,
+        fp1_0.created_at,
+        fp1_0.department_id,
+        fp1_0.designation,
+        fp1_0.experience_years,
+        fp1_0.max_workload_hours,
+        fp1_0.office,
+        fp1_0.phone,
+        fp1_0.research_area,
+        fp1_0.updated_at,
+        fp1_0.user_id 
+    from
+        faculty_profiles fp1_0 
+    where
+        fp1_0.user_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.account_status,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.institutional_id,
+        u1_0.password_hash,
+        u1_0.role_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        frr1_0.id,
+        frr1_0.availability,
+        frr1_0.department_name,
+        frr1_0.designation,
+        frr1_0.email,
+        frr1_0.full_name,
+        frr1_0.hod_note,
+        frr1_0.institutional_id,
+        frr1_0.phone,
+        frr1_0.reviewed_at,
+        frr1_0.skills_json,
+        frr1_0.status,
+        frr1_0.submitted_at 
+    from
+        faculty_registration_requests frr1_0 
+    where
+        frr1_0.id=? for update
+Hibernate: 
+    select
+        fp1_0.id,
+        fp1_0.avatar_url,
+        fp1_0.created_at,
+        fp1_0.department_id,
+        fp1_0.designation,
+        fp1_0.experience_years,
+        fp1_0.max_workload_hours,
+        fp1_0.office,
+        fp1_0.phone,
+        fp1_0.research_area,
+        fp1_0.updated_at,
+        fp1_0.user_id 
+    from
+        faculty_profiles fp1_0 
+    where
+        fp1_0.user_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.account_status,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.institutional_id,
+        u1_0.password_hash,
+        u1_0.role_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.institutional_id=?
+Hibernate: 
+    select
+        frr1_0.id,
+        frr1_0.availability,
+        frr1_0.department_name,
+        frr1_0.designation,
+        frr1_0.email,
+        frr1_0.full_name,
+        frr1_0.hod_note,
+        frr1_0.institutional_id,
+        frr1_0.phone,
+        frr1_0.reviewed_at,
+        frr1_0.skills_json,
+        frr1_0.status,
+        frr1_0.submitted_at 
+    from
+        faculty_registration_requests frr1_0 
+    where
+        frr1_0.id=? for update
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.code,
+        d1_0.created_at,
+        d1_0.name 
+    from
+        departments d1_0 
+    where
+        d1_0.code=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description 
+    from
+        roles r1_0 
+    where
+        r1_0.id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        s1_0.name=?
+Hibernate: 
+    insert 
+    into
+        users
+        (account_status, created_at, email, full_name, institutional_id, password_hash, role_id, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        faculty_profiles
+        (avatar_url, created_at, department_id, designation, experience_years, max_workload_hours, office, phone, research_area, updated_at, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        audit_logs
+        (action, created_at, details, entity_id, entity_type, performed_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    update
+        faculty_registration_requests 
+    set
+        availability=?,
+        department_name=?,
+        designation=?,
+        email=?,
+        full_name=?,
+        hod_note=?,
+        institutional_id=?,
+        phone=?,
+        reviewed_at=?,
+        skills_json=?,
+        status=? 
+    where
+        id=?
+Hibernate: 
+    insert 
+    into
+        faculty_skills
+        (faculty_id, skill_id) 
+    values
+        (?, ?)
+CONCURRENCY TEST EXCEPTION: java.lang.RuntimeException - com.faculynk.exception.RegistrationNotPendingException: Registration request is not in PENDING status: APPROVED
+CONCURRENCY TEST EXCEPTION CAUSE: com.faculynk.exception.RegistrationNotPendingException - Registration request is not in PENDING status: APPROVED
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.account_status,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.institutional_id,
+        u1_0.password_hash,
+        u1_0.role_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.institutional_id=?
+Hibernate: 
+    select
+        fp1_0.id,
+        fp1_0.avatar_url,
+        fp1_0.created_at,
+        fp1_0.department_id,
+        fp1_0.designation,
+        fp1_0.experience_years,
+        fp1_0.max_workload_hours,
+        fp1_0.office,
+        fp1_0.phone,
+        fp1_0.research_area,
+        fp1_0.updated_at,
+        fp1_0.user_id 
+    from
+        faculty_profiles fp1_0 
+    where
+        fp1_0.user_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.account_status,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.institutional_id,
+        u1_0.password_hash,
+        u1_0.role_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.institutional_id=?
+Hibernate: 
+    select
+        fp1_0.id,
+        fp1_0.avatar_url,
+        fp1_0.created_at,
+        fp1_0.department_id,
+        fp1_0.designation,
+        fp1_0.experience_years,
+        fp1_0.max_workload_hours,
+        fp1_0.office,
+        fp1_0.phone,
+        fp1_0.research_area,
+        fp1_0.updated_at,
+        fp1_0.user_id 
+    from
+        faculty_profiles fp1_0 
+    where
+        fp1_0.user_id=?
+Hibernate: 
+    select
+        fp1_0.id,
+        fp1_0.avatar_url,
+        fp1_0.created_at,
+        fp1_0.department_id,
+        fp1_0.designation,
+        fp1_0.experience_years,
+        fp1_0.max_workload_hours,
+        fp1_0.office,
+        fp1_0.phone,
+        fp1_0.research_area,
+        fp1_0.updated_at,
+        fp1_0.user_id 
+    from
+        faculty_profiles fp1_0 
+    join
+        users u1_0 
+            on u1_0.id=fp1_0.user_id 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        i1_0.faculty_id,
+        i1_0.interest 
+    from
+        faculty_interests i1_0 
+    where
+        i1_0.faculty_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.account_status,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.institutional_id,
+        u1_0.password_hash,
+        u1_0.role_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.institutional_id=?
+Hibernate: 
+    select
+        frr1_0.id,
+        frr1_0.availability,
+        frr1_0.department_name,
+        frr1_0.designation,
+        frr1_0.email,
+        frr1_0.full_name,
+        frr1_0.hod_note,
+        frr1_0.institutional_id,
+        frr1_0.phone,
+        frr1_0.reviewed_at,
+        frr1_0.skills_json,
+        frr1_0.status,
+        frr1_0.submitted_at 
+    from
+        faculty_registration_requests frr1_0 
+    where
+        frr1_0.id=?
+Hibernate: 
+    delete 
+    from
+        faculty_skills 
+    where
+        faculty_id=?
+Hibernate: 
+    delete 
+    from
+        faculty_profiles 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        users 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        faculty_registration_requests 
+    where
+        id=?
+]]></system-out>
+  </testcase>
+  <testcase name="testApprovalDetailsAndPersistence" classname="com.faculynk.RegistrationAndVerificationTests" time="0.482">
+    <system-out><![CDATA[Hibernate: 
+    select
+        frr1_0.id,
+        frr1_0.availability,
+        frr1_0.department_name,
+        frr1_0.designation,
+        frr1_0.email,
+        frr1_0.full_name,
+        frr1_0.hod_note,
+        frr1_0.institutional_id,
+        frr1_0.phone,
+        frr1_0.reviewed_at,
+        frr1_0.skills_json,
+        frr1_0.status,
+        frr1_0.submitted_at 
+    from
+        faculty_registration_requests frr1_0 
+    where
+        frr1_0.institutional_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.account_status,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.institutional_id,
+        u1_0.password_hash,
+        u1_0.role_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        fp1_0.id,
+        fp1_0.avatar_url,
+        fp1_0.created_at,
+        fp1_0.department_id,
+        fp1_0.designation,
+        fp1_0.experience_years,
+        fp1_0.max_workload_hours,
+        fp1_0.office,
+        fp1_0.phone,
+        fp1_0.research_area,
+        fp1_0.updated_at,
+        fp1_0.user_id 
+    from
+        faculty_profiles fp1_0 
+    where
+        fp1_0.user_id=?
+Hibernate: 
+    select
+        frr1_0.id,
+        frr1_0.availability,
+        frr1_0.department_name,
+        frr1_0.designation,
+        frr1_0.email,
+        frr1_0.full_name,
+        frr1_0.hod_note,
+        frr1_0.institutional_id,
+        frr1_0.phone,
+        frr1_0.reviewed_at,
+        frr1_0.skills_json,
+        frr1_0.status,
+        frr1_0.submitted_at 
+    from
+        faculty_registration_requests frr1_0 
+    where
+        frr1_0.id=? for update
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.account_status,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.institutional_id,
+        u1_0.password_hash,
+        u1_0.role_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.institutional_id=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.code,
+        d1_0.created_at,
+        d1_0.name 
+    from
+        departments d1_0 
+    where
+        d1_0.code=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.code,
+        d1_0.created_at,
+        d1_0.name 
+    from
+        departments d1_0 
+    where
+        d1_0.name=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description 
+    from
+        roles r1_0 
+    where
+        r1_0.id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        s1_0.name=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        s1_0.name=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.name 
+    from
+        skills s1_0 
+    where
+        s1_0.name=?
+Hibernate: 
+    insert 
+    into
+        users
+        (account_status, created_at, email, full_name, institutional_id, password_hash, role_id, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        faculty_profiles
+        (avatar_url, created_at, department_id, designation, experience_years, max_workload_hours, office, phone, research_area, updated_at, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        audit_logs
+        (action, created_at, details, entity_id, entity_type, performed_by, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    update
+        faculty_registration_requests 
+    set
+        availability=?,
+        department_name=?,
+        designation=?,
+        email=?,
+        full_name=?,
+        hod_note=?,
+        institutional_id=?,
+        phone=?,
+        reviewed_at=?,
+        skills_json=?,
+        status=? 
+    where
+        id=?
+Hibernate: 
+    insert 
+    into
+        faculty_skills
+        (faculty_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        faculty_skills
+        (faculty_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        faculty_skills
+        (faculty_id, skill_id) 
+    values
+        (?, ?)
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.account_status,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.institutional_id,
+        u1_0.password_hash,
+        u1_0.role_id,
+        u1_0.updated_at 
+    from
+        users u1_0 
+    where
+        u1_0.institutional_id=?
+Hibernate: 
+    select
+        fp1_0.id,
+        fp1_0.avatar_url,
+        fp1_0.created_at,
+        fp1_0.department_id,
+        fp1_0.designation,
+        fp1_0.experience_years,
+        fp1_0.max_workload_hours,
+        fp1_0.office,
+        fp1_0.phone,
+        fp1_0.research_area,
+        fp1_0.updated_at,
+        fp1_0.user_id 
+    from
+        faculty_profiles fp1_0 
+    join
+        users u1_0 
+            on u1_0.id=fp1_0.user_id 
+    where
+        u1_0.id=?
+]]></system-out>
+  </testcase>
+</testsuite>

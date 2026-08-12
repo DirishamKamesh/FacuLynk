@@ -1,0 +1,5 @@
+# Created at 2026-08-13T01:17:29.008
+Boot Manifest-JAR contains absolute paths in classpath 'E:\Antigravity Projects\faculynkv3\backend\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+
