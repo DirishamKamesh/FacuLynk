@@ -45,6 +45,7 @@ app:
     expiration-ms: 28800000  # 8 hours
     cookie-name: FACULYNK_TOKEN
     cookie-secure: ${COOKIE_SECURE:false}
+    cookie-samesite: ${COOKIE_SAMESITE:Strict}
 
   # ---- CORS ----
   cors:
